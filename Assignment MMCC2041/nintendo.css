@@ -1,0 +1,133 @@
+
+nav{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #ff0000;
+}
+
+nav a{
+	float: left;
+	text-align: center;
+	padding: 12px 40px;
+  	text-decoration: none;
+  	color: #ffffff;
+  	font-family: "Power Red and Blue", Geneva, sans-serif;
+  	font-size: 20px;
+  	transition: 1s;
+  	z-index: 2;
+}
+
+.logo{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+nav a:hover{
+	background-color: #a9a9a9;
+}
+
+header{
+	margin-top: 45px;
+	background-color: #990000;
+	width: 100%;
+	height: 100%;
+	text-align:center;
+}
+
+
+h1{
+	margin: auto;
+	font-size: 60px;
+	color: white;
+	font-family: "Power Clear", Monaco, monospace;
+}
+
+h2{
+	font-family: "Power Red and Green", Helvetica, sans-serif;
+	font-size: 30px;
+}
+
+p{
+	font-family: "Gill Sans MT", Geneva, sans-serif;
+	font-size: 18px;
+}
+
+h4{
+	margin: auto;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 24px;
+	color: white;
+}
+
+
+.text{
+	text-align: center;
+	width: auto;
+	height: auto;
+	padding: 10px 50px;
+	border: 2px solid black;
+}
+
+iframe{
+	margin-top: 1px;
+	width: 600px;
+	height: 400px;
+}
+
+figcaption{
+	font-family: "Arial", Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.images img{
+	padding-left: 30px;
+	border: 2px solid black;
+	height: 400px;
+}
+
+main{
+	margin: 0px;
+	padding: 10px;
+	background-color: #f0f0f0;
+}
+
+section.index{
+	margin: 0px;
+	padding: 10px;
+	background-color: #f0f0f0;
+	color: #000000;
+	text-decoration: none;
+}
+
+footer{
+	background-color: red;
+	padding: 10px;
+}
+
+
+.images{
+	margin-top: 20px;
+	padding: 20px;
+	border: 2px solid black;
+}
+
+.nespic{
+	margin-left: 10%;
+}
+
+.gameboypic{
+	margin-left: 10%;
+}
+
+.picleft{
+	text-align: left;
+}
+
+.textright{
+	float: right;
+	width: 50%;
+	text-align: right;
+	border: 2px solid black;
+}

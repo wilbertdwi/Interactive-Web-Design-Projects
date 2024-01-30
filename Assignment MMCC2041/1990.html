@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>1990</title>
+		<link href="nintendo.css" rel="stylesheet" />
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script>
+		$(document).ready(function() { 
+		var altpic = "introvar";
+			$('.snes').hide();
+			$('.vboy').hide();
+			$('.nin64').hide();
+			$('.intro').show();
+
+			$('.snespic').mouseenter(function(){
+				$('.snespic').css("opacity", "0.5");
+			})
+
+			$('.snespic').mouseleave(function(){
+				$('.snespic').css("opacity", "1.0");
+			})
+
+			$('.virtualboypic').mouseenter(function(){
+				$('.virtualboypic').css("opacity", "0.5");
+			})
+
+			$('.virtualboypic').mouseleave(function(){
+				$('.virtualboypic').css("opacity", "1.0");
+			})
+
+			$('.nintendo64pic').mouseenter(function(){
+				$('.nintendo64pic').css("opacity", "0.5");
+			})
+
+			$('.nintendo64pic').mouseleave(function(){
+				$('.nintendo64pic').css("opacity", "1.0");
+			})
+
+			$('.snespic').click(function(){
+				
+				if(altpic == "snesvar"){
+					$('.snes').fadeOut();
+					$('.vboy').fadeOut();
+					$('.nin64').fadeOut();
+					$('.intro').delay(400).fadeIn();
+					altpic = "introvar";
+				}
+				else{
+					$('.snes').delay(400).fadeIn();
+					$('.vboy').fadeOut();
+					$('.nin64').fadeOut();
+					$('.intro').fadeOut();
+					altpic = "snesvar";
+				}
+			})
+
+			$('.virtualboypic').click(function(){
+				
+				if(altpic == "vboyvar"){
+					$('.snes').fadeOut();
+					$('.vboy').fadeOut();
+					$('.nin64').fadeOut();
+					$('.intro').delay(400).fadeIn();
+					altpic = "introvar";
+				}
+				else{
+					$('.snes').fadeOut();
+					$('.vboy').delay(400).fadeIn();
+					$('.nin64').fadeOut();
+					$('.intro').fadeOut();
+					altpic = "vboyvar";
+				}
+			})
+
+			$('.nintendo64pic').click(function(){
+				
+				if(altpic == "nin64var"){
+					$('.snes').fadeOut();
+					$('.vboy').fadeOut();
+					$('.nin64').fadeOut();
+					$('.intro').delay(400).fadeIn();
+					altpic = "introvar";
+				}
+				else{
+					$('.snes').fadeOut();
+					$('.vboy').fadeOut();
+					$('.nin64').delay(400).fadeIn();
+					$('.intro').fadeOut();
+					altpic = "nin64var";
+				}
+			})
+			
+		})
+		</script>
+	</head>
+	<body>
+		<nav>
+			<a href="index.html">Homepage</a>
+			<a href="1980.html">1980</a>
+			<a href="1990.html">1990</a>
+			<a href="2000.html">2000</a>
+			<a href="2010.html">2010</a>
+		</nav>
+		<header>
+			<h1>1990</h1>
+		</header>
+		
+		<main>
+			<div class="text">
+
+				<div class="intro">
+					<iframe src="https://www.youtube.com/embed/K783SDTBKmg" ></iframe>
+					<figcaption> Super Smash Bros Trailer for N64 </figcaption>
+					<p>Nintendo developed 4 consoles in 1990 and 2 of them were essentially upgraded versions of the predecessors.</p> 
+				</div>
+
+				<div class="snes">
+				<h2>Super Nintendo Entertainment System (SNES)</h2>
+				<p>Launch Year: 1990</p>
+				<p>Notable Games: Super Mario World, Earthbound, Super Metroid</p>
+				<p>Summary: When released, it started slow both in Japan and in the West as it faced many rival video consoles such as Sega's Mega Drive. Nostalgia and SNES launch game Super Mario World gave a boost on sales of SNES. In the end, SNES sold more than their rival Mega Drive and created numerous 2D classic games such as Earthbound, Super Metroid, Yoshi's Island, etc. It sold around 49 million units.</p>
+				</div>
+				
+				<div class="vboy">
+				<h2>Virtual Boy</h2>
+				<p>Launch Year: 1995</p>
+				<p>Notable Games: Virtual Land Wario Land, 3D Tetris</p>
+				<p>Summary: Nintendo tried to be ahead of it's time by introducing a Virtual Reality(VR) prototype, Virtual Boy. However, upon release, it raises concerns about motion sickness when using Virtual Boy. The sales does not help as it sold less than 1 million units (770,000 units approximately). Due to its low sales and problems with the console itself, while it is innovative at that time, it is highly regarded as a massive failure.</p>
+				</div>
+
+				<div class="nin64">
+				<h2>Nintendo 64</h2>
+				<p>Launch Year: 1996</p>
+				<p>Notable Games: Super Mario 64, Mario Kart 64, Banjo-Kazooie</p>
+				<p>Summary: When it was launched, they struggled to compete with rival Sony's Playstation and Sega Saturn. In the end, it only managed to sell approx. 33 million units. Although sales were not that high as previous consoles, the sales are decent and fans considered it as a great, iconic Nintendo console with a part of its success due to famous games such as Goldeneye 007, Super Mario 64, etc.</p>
+				</div>
+			</div>
+
+			<div class="images">
+				<img class="snespic" src="images/snes.png" alt = "SNES Image" width="35%"> <!-- Creative Commons License - https://commons.wikimedia.org/wiki/File:SNES-Mod1-Console-Set-transparent.png -->
+				<img class="virtualboypic" src="images/virtualboy.jpg" alt = "Virtual Boy Image" width="20%"> <!-- Creative Commons License - https://commons.wikimedia.org/wiki/File:Virtual-Boy-Set.jpg -->
+				<img class="nintendo64pic" src="images/nintendo64.jpg" alt = "Nintendo 64 Image" width="35%"> <!-- Creative Commons License - https://commons.wikimedia.org/wiki/File:Nintendo_64_with_Mario_Kart_64_cartridge_20040725.jpg -->
+			</div>
+			
+		</main>
+		<footer>
+			<h4>Disclaimer: I do not own any of these photos. Please note that all images/videos and copyrights belong to their original owners. No copyright infringement intended.</h4>
+		</footer>
+	</body>
+</html>

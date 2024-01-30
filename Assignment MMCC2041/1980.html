@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>1980</title>
+		<link href="nintendo.css" rel="stylesheet" />
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script>
+		$(document).ready(function() { 
+			var altpic = "introvar";
+			$('.nes').hide();
+			$('.gameboy').hide();
+			$('.intro').show();
+
+			$('.nespic').mouseenter(function(){
+				$('.nespic').css("opacity", "0.5");
+			})
+
+			$('.nespic').mouseleave(function(){
+				$('.nespic').css("opacity", "1.0");
+			})
+
+			$('.gameboypic').mouseenter(function(){
+				$('.gameboypic').css("opacity", "0.5");
+			})
+
+			$('.gameboypic').mouseleave(function(){
+				$('.gameboypic').css("opacity", "1.0");
+			})
+
+			$('.nespic').click(function(){
+				if(altpic == "nesvar"){
+					$('.nes').fadeOut();
+					$('.gameboy').fadeOut();
+					$('.intro').delay(400).fadeIn();
+					altpic = "introvar";
+				}
+				else{
+					$('.nes').delay(400).fadeIn();
+					$('.gameboy').fadeOut();
+					$('.intro').fadeOut();
+					altpic = "nesvar";
+				}
+			})
+
+			$('.gameboypic').click(function(){
+				
+				if(altpic == "gameboyvar"){
+					$('.nes').fadeOut();
+					$('.gameboy').fadeOut();
+					$('.intro').delay(400).fadeIn();
+					altpic = "introvar";
+				}
+				else{
+					$('.nes').fadeOut();
+					$('.gameboy').delay(400).fadeIn();
+					$('.intro').fadeOut();
+					altpic = "gameboyvar";
+				}
+			})
+		})
+		</script>
+	</head>
+	<body>
+		<nav>
+			<a href="index.html">Homepage</a>
+			<a href="1980.html">1980</a>
+			<a href="1990.html">1990</a>
+			<a href="2000.html">2000</a>
+			<a href="2010.html">2010</a>
+		</nav>
+		<header>
+			<h1>1980</h1>
+		</header>
+		
+		<main>
+			<div class="text">
+				<div class="intro">
+					<iframe src="https://www.youtube.com/embed/62bI0zItF6g" ></iframe>
+					<figcaption> NES Classic Edition Trailer </figcaption>
+					<p>1980s is the year where Nintendo began to create and release video game consoles. 2 video game consoles in this decade were released: NES and Game Boy.</p> 
+				</div>
+
+				<div class="nes">
+						<h2>Nintendo Entertainment System (NES)</h2>
+						<p>Launch Year: 1983</p>
+						<p>Notable Games: Super Mario Bros, The Legend of Zelda, Duck Hunt</p>
+						<p>Summary: It is the first Nintendo video game console sold worldwide. When it was released in the West, there was speculation that it would fail as the market were still trying to recover from the recession of the video games crash. However, it was proven wrong as it sold around 62 million units and became an iconic/classic console. It also outsold rival consoles and introduced players to Mario, Zelda, Samus, etc.</p>
+				</div>
+
+				<div class="gameboy">
+					<h2>Game Boy</h2>
+					<p>Launch Year: 1989</p>
+					<p>Notable Games: Tetris, Super Mario Land, Pokemon Gold/Silver</p>
+					<p>Summary: When it was released, it was cheaper than the launch price of NES with a copy of Tetris game. A newer version called Game Boy Color was introduced in 1998. The low cost helped boost its sales as it became the second best-selling game console for Nintendo since it sold around 119 million units. It was sturdy, have long-lasting batteries, playful and a well-loved toy, it also introduces new players to the world of Pokemon.</p>
+				</div>
+			</div>
+			
+			<div class="images">
+				<img class="nespic" src="images/nes.jpg" alt = "NES Image" width="40%"> <!-- Creative Commons License - https://commons.wikimedia.org/wiki/File:Wikipedia_NES_PAL.jpg -->
+				<img class="gameboypic" src="images/gameboy.jpg" alt = "Gameboy Image" width="20%"> <!-- Creative Commons License - https://commons.wikimedia.org/wiki/File:Nintendo_Gameboy.jpg -->
+			</div>
+			
+		</main>
+		<footer>
+			<h4>Disclaimer: I do not own any of these photos. Please note that all images/videos and copyrights belong to their original owners. No copyright infringement intended.</h4>
+		</footer>
+	</body>
+</html>

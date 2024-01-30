@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>2010</title>
+		<link href="nintendo.css" rel="stylesheet" />
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script>
+		$(document).ready(function() {
+			var altpic = "introvar";
+			$('.3ds').hide();
+			$('.wiiu').hide();
+			$('.ninswitch').hide();
+			$('.intro').show();
+
+			$('.3dspic').mouseenter(function(){
+				$('.3dspic').css("opacity", "0.5");
+			})
+
+			$('.3dspic').mouseleave(function(){
+				$('.3dspic').css("opacity", "1.0");
+			})
+
+			$('.wiiupic').mouseenter(function(){
+				$('.wiiupic').css("opacity", "0.5");
+			})
+
+			$('.wiiupic').mouseleave(function(){
+				$('.wiiupic').css("opacity", "1.0");
+			})
+
+			$('.switchpic').mouseenter(function(){
+				$('.switchpic').css("opacity", "0.5");
+			})
+
+			$('.switchpic').mouseleave(function(){
+				$('.switchpic').css("opacity", "1.0");
+			})
+
+			$('.3dspic').click(function(){
+				
+				if(altpic == "3dsvar"){
+					$('.3ds').fadeOut();
+					$('.wiiu').fadeOut();
+					$('.ninswitch').fadeOut();
+					$('.intro').delay(400).fadeIn();
+					altpic = "introvar";
+				}
+				else{
+					$('.3ds').delay(400).fadeIn();
+					$('.wiiu').fadeOut();
+					$('.ninswitch').fadeOut();
+					$('.intro').fadeOut();
+					altpic = "3dsvar";
+				}
+			})
+
+			$('.wiiupic').click(function(){
+				
+				if(altpic == "wiiuvar"){
+					$('.3ds').fadeOut();
+					$('.wiiu').fadeOut();
+					$('.ninswitch').fadeOut();
+					$('.intro').delay(400).fadeIn();
+					altpic = "introvar";
+				}
+				else{
+					$('.3ds').fadeOut();
+					$('.wiiu').delay(400).fadeIn();
+					$('.ninswitch').fadeOut();
+					$('.intro').fadeOut();
+					altpic = "wiiuvar";
+				}
+			})
+
+			$('.switchpic').click(function(){
+				
+				if(altpic == "switchvar"){
+					$('.3ds').fadeOut();
+					$('.wiiu').fadeOut();
+					$('.ninswitch').fadeOut();
+					$('.intro').delay(400).fadeIn();
+					altpic = "introvar";
+				}
+				else{
+					$('.3ds').fadeOut();
+					$('.wiiu').fadeOut();
+					$('.ninswitch').delay(400).fadeIn();
+					$('.intro').fadeOut();
+					altpic = "switchvar";
+				}
+			})
+
+		})
+		</script>
+	</head>
+	<body>
+		<nav>
+			<a href="index.html">Homepage</a>
+			<a href="1980.html">1980</a>
+			<a href="1990.html">1990</a>
+			<a href="2000.html">2000</a>
+			<a href="2010.html">2010</a>
+		</nav>
+		<header>
+			<h1>2010</h1>
+		</header>
+		
+		<main>
+			<div class="text">
+				<div class="intro">
+					<iframe src="https://www.youtube.com/embed/f5uik5fgIaI" ></iframe>
+					<figcaption> Nintendo Switch Trailer </figcaption>
+					<p>Technology advanced a lot which resulted in many competitions in the market, thus  new console need to have better graphics or new innovations to survive.As of now, Nintendo released 3 consoles to the market.</p> 
+				</div>
+
+				<div class="3ds">
+					<h2>Nintendo 3DS</h2>
+					<p>Launch Year: 2011</p>
+					<p>Notable Games: Rune Factory 4, Pokemon Sun and Moon, Bravely Default, Mario Kart 7</p>
+					<p>Summary: Nintendo 3DS is an upgraded DS. It has better graphics with the ability to make some games look 3D. However, it was less popular than DS because it was more expensive than usual, disappointing 3D display and performances. Due to those problems, it has a moderate sales with only  65 million units sold.</p>
+				</div>
+				
+				<div class="wiiu">
+					<h2>Wii U</h2>
+					<p>Launch Year: 2012</p>
+					<p>Notable Games: Nintendo Land, Super Mario 3D World, Splatoon</p>
+					<p>Summary: Wii U was the successor to the Wii. Wii U supports high-definition graphics and a touchscreen. While it's inital release was great,it was considered as a failure due to low sales. One main reason for low sales is due to not enough huge popular franchise games being released. It only sold 13 million units.</p>
+				</div>
+				
+				<div class="ninswitch">
+					<h2>Nintendo Switch</h2>
+					<p>Launch Year: 2017</p>
+					<p>Notable Games: The Legend of Zelda: Breath of the Wild, Animal Crossing: New Horizons, Super Mario Odyssey</p>
+					<p>Summary: Nintendo Switch is a video game console that can be played as a tablet-like device with touchscreen or docking station to play on a big TV. It can be considered as a success due to high sales and Nintendo released many popular games such as The Legend of Zelda and Animal Crossing. Currently, it sold over 68.3 million consoles</p>
+				</div>
+			</div>
+		
+			<div class="images">
+				<img class="3dspic" src="images/3ds.png" alt="3DS Image" width="25%"> <!-- Creative Commons License - https://commons.wikimedia.org/wiki/File:Nintendo_3DS_Aqua_Blue_open.png -->
+				<img class="wiiupic" src="images/wiiu.png" alt="Wii U Image" width="35%"> <!-- Creative Commons License - https://commons.wikimedia.org/wiki/File:Wii_U_Console_and_Gamepad.png -->
+				<img class="switchpic" src="images/switch.jpg" alt="Nintendo Switch Image" width="32%"> <!-- Creative Commons License - https://commons.wikimedia.org/wiki/File:NINTENDO_SWITCH_MAGNET.jpg -->
+			</div>
+		</main>
+		<footer>
+			<h4>Disclaimer: I do not own any of these photos. Please note that all images/videos and copyrights belong to their original owners. No copyright infringement intended.</h4>
+		</footer>
+	</body>
+</html>

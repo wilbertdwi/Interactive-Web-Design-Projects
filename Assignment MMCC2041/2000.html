@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>2000</title>
+		<link href="nintendo.css" rel="stylesheet" />
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script>
+		$(document).ready(function() { 
+			var altpic = "introvar";
+			$('.gamecube').hide();
+			$('.gba').hide();
+			$('.ds').hide();
+			$('.wii').hide();
+			$('.intro').show();
+
+			$('.gamecubepic').mouseenter(function(){
+				$('.gamecubepic').css("opacity", "0.5");
+			})
+
+			$('.gamecubepic').mouseleave(function(){
+				$('.gamecubepic').css("opacity", "1.0");
+			})
+
+			$('.gbapic').mouseenter(function(){
+				$('.gbapic').css("opacity", "0.5");
+			})
+
+			$('.gbapic').mouseleave(function(){
+				$('.gbapic').css("opacity", "1.0");
+			})
+
+			$('.dspic').mouseenter(function(){
+				$('.dspic').css("opacity", "0.5");
+			})
+
+			$('.dspic').mouseleave(function(){
+				$('.dspic').css("opacity", "1.0");
+			})
+
+			$('.wiipic').mouseenter(function(){
+				$('.wiipic').css("opacity", "0.5");
+			})
+
+			$('.wiipic').mouseleave(function(){
+				$('.wiipic').css("opacity", "1.0");
+			})
+
+			$('.gamecubepic').click(function(){
+				
+				if(altpic == "gamecubevar"){
+					$('.gamecube').fadeOut();
+					$('.gba').fadeOut();
+					$('.ds').fadeOut();
+					$('.wii').fadeOut();
+					$('.intro').delay(400).fadeIn();
+					altpic = "introvar";
+				}
+				else{
+					$('.gamecube').delay(400).fadeIn();
+					$('.gba').fadeOut();
+					$('.ds').fadeOut();
+					$('.wii').fadeOut();
+					$('.intro').fadeOut();
+					altpic = "gamecubevar";
+				}
+			})
+
+			$('.gbapic').click(function(){
+				
+				if(altpic == "gbavar"){
+					$('.gamecube').fadeOut();
+					$('.gba').fadeOut();
+					$('.ds').fadeOut();
+					$('.wii').fadeOut();
+					$('.intro').delay(400).fadeIn();
+					altpic = "introvar";
+				}
+				else{
+					$('.gamecube').fadeOut();
+					$('.gba').delay(400).fadeIn();
+					$('.ds').fadeOut();
+					$('.wii').fadeOut();
+					$('.intro').fadeOut();
+					altpic = "gbavar";
+				}
+			})
+
+
+			$('.dspic').click(function(){
+				
+				if(altpic == "dsvar"){
+					$('.gamecube').fadeOut();
+					$('.gba').fadeOut();
+					$('.ds').fadeOut();
+					$('.wii').fadeOut();
+					$('.intro').delay(400).fadeIn();
+					altpic = "introvar";
+				}
+				else{
+					$('.gamecube').fadeOut();
+					$('.gba').fadeOut();
+					$('.ds').delay(400).fadeIn();
+					$('.wii').fadeOut();
+					$('.intro').fadeOut();
+					altpic = "dsvar";
+				}
+			})
+
+			$('.wiipic').click(function(){
+				
+				if(altpic == "wiivar"){
+					$('.gamecube').fadeOut();
+					$('.gba').fadeOut();
+					$('.ds').fadeOut();
+					$('.wii').fadeOut();
+					$('.intro').delay(400).fadeIn();
+					altpic = "introvar";
+				}
+				else{
+					$('.gamecube').fadeOut();
+					$('.gba').fadeOut();
+					$('.ds').fadeOut();
+					$('.wii').delay(400).fadeIn();
+					$('.intro').fadeOut();
+					altpic = "wiivar";
+				}
+			})
+			
+		})
+		</script>
+	</head>
+	<body>
+		<nav>
+			<a href="index.html">Homepage</a>
+			<a href="1980.html">1980</a>
+			<a href="1990.html">1990</a>
+			<a href="2000.html">2000</a>
+			<a href="2010.html">2010</a>
+		</nav>
+		<header>
+			<h1>2000</h1>
+		</header>
+		
+		<main>
+			<div class="text">
+
+				<div class="intro">
+					<iframe src="https://www.youtube.com/embed/TaA-lYUQom0" ></iframe>
+					<figcaption> Introduction of Nintendo DS </figcaption>
+					<p>Some fans considered this era to be the golden-era of Nintendo due to new innovations on new consoles and for producing many fun, engaging games. Nintendo released 4 consoles in this era.</p> 
+				</div>
+
+				<div class="gamecube">
+					<h2>Nintendo Gamecube</h2>
+					<p>Launch Year: 2001</p>
+					<p>Notable Games: Super Smash Bros. Melee, Super Mario Sunshine, Luigi's Mansion</p>
+					<p>Summary: It faced tough competitions such as PlayStation 2 and Xbox when it was released. While it released a few popular franchise games such as Mario and Zelda games, it only helped initial sales. As a result, it only managed to sell approx 22 million units. It was regarded as a failure due to its low sales and terrible hardware design with people criticizing/branding it 'kiddie' choice. Some fans however still considered it a iconic console.</p>
+				</div>
+				
+				<div class="gba">
+					<h2>Game Boy Advance</h2>
+					<p>Launch Year: 2001</p>
+					<p>Notable Games: Pokemon Emerald, Golden Sun, Harvest Moon: Friends of Mineral Town </p>
+					<p>Summary: Game Boy Advance(GBA) is an upgraded version of Game Boy Color which gives better graphics and wider range of colors. While there is not a huge difference between older versions of Game Boy, it helped created new original games such as Harvest Moon, Advance Wars, etc. Huge franchise games such as Pokemon also helped boost its sales. It sold around 81 million units.</p>
+				</div>
+				
+				<div class="ds">
+					<h2>Nintendo DS</h2>
+					<p>Launch Year: 2004</p>
+					<p>Notable Games: Pokemon Platinum, Mario Kart DS, The World Ends With You, Chrono Trigger</p>
+					<p>Summary: Nintendo DS introduced dual-screen setup with touch-screen at the bottom screen creating new ways to play games. It created touch-screen games before the age of smartphones. In the beginning of the launch, it was ridiculed due to its weird design and no-one believed that touch-screen gaming can work. However, it was quickly proven wrong with many games relying on touch-screen,such as Pokemon Platinum, Nintendogs, being produced and being popular with various audiences. Some versions of DS have backwards compatibility with GBA. In the end, Nintendo DS is Nintendo's best-selling game console of any kind with around 154 million units sold.</p>
+				</div>
+
+				<div class="wii">
+					<h2>Wii</h2>
+					<p>Launch Year: 2006</p>
+					<p>Notable Games: Wii Sports, Mario Kart Wii, Wii Play</p>
+					<p>Summary:It introduced motion-controlled games. Just like Nintendo DS, in the beginning it was ridiculed but audiences enjoyed these brand new games such as Wii Sports and enjoyed playing a new type of gaming using motion controllers. It became a huge success as it sold more than its rival PlayStation 3 and Xbox 360 with 101 million units sold. It was also hugely popular with families, kids and non-gamers.</p>
+				</div>
+			</div>
+			
+			<div class="images">
+				<img class="gamecubepic" src="images/gamecube.jpg" alt = "Gamecube Image" width="23%"> <!-- Creative Commons License - https://commons.wikimedia.org/wiki/File:GameCube-Set.jpg -->
+				<img class="gbapic" src="images/gba.jpg" alt = "GBA Image" width="20%"> <!-- Creative Commons License - https://commons.wikimedia.org/wiki/File:Game-Boy-Advance-SP-Mk1-Blue.jpg -->
+				<img class="dspic" src="images/ds.jpg" alt = "Nintendo DS Image" width="25%"> <!-- Creative Commons License - https://commons.wikimedia.org/wiki/File:Nintendo-DS-Lite-Black-Open.jpg -->
+				<img class="wiipic" src="images/wii.png" alt = "Wii Image" width="20%"> <!-- Creative Commons License - https://commons.wikimedia.org/wiki/File:Wii_console.png -->
+			</div>
+		</main>
+		<footer>
+			<h4>Disclaimer: I do not own any of these photos. Please note that all images/videos and copyrights belong to their original owners. No copyright infringement intended.</h4>
+		</footer>
+	</body>
+</html>
